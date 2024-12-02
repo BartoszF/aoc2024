@@ -1,2 +1,1 @@
-class day1 {
-}
+class day1
