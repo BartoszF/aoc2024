@@ -7,6 +7,16 @@ data class Vec(
     operator fun plus(other: Vec): Vec = Vec(x + other.x, y + other.y)
 
     fun rev(): Vec = Vec(-x, -y)
+
+    fun copy(): Vec = Vec(x, y)
+
+    companion object {
+        val ZERO = Vec(0, 0)
+        val UP = Vec(0, -1)
+        val DOWN = Vec(0, 1)
+        val LEFT = Vec(-1, 0)
+        val RIGHT = Vec(1, 0)
+    }
 }
 
 val neighbours =
